@@ -1,0 +1,135 @@
+<!-- https://github.com/webstoryboy/megabox2019/tree/master/assets/css -->
+<html lang="ko"> <!-- 한국어 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 한글깨짐 방지 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">    
+        <!-- 모바일웹이나 반응형웹에서 각각의 기기장치를 인식할 때 사용하는 중요한 태그 -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- 모든 익스플로러에서 호환성보기 무시 -->
+         
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/font-awesome.css">
+        <link rel="stylesheet" href="../css/animate.min.css">
+
+        <!-- Javascript-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script>
+ 
+                $(window).on("scroll", function (e) {
+                    var scrollTop = $(window).scrollTop();
+                    var offset = 0;
+
+                    console.log('test');
+                    setTimeout(function () {
+                        if(scrollTop > offset){
+                            $('#header').addClass('navbar-small');
+                            $('.sm-up-container').show();
+                            $('.scroll-wrap').hide();
+                         }else{
+                            $('#header').removeClass('navbar-small');
+                            $('.sm-up-container').hide();
+                            $('.scroll-wrap').show();
+                        }
+                    }, 300)
+                });
+        </script>
+    </head>
+    <body>
+         <div id="wrap">
+          <div id="overlay">
+            <div id="header">
+              <div class="container">
+                <div class="row">
+                 <div class="header">
+                  <div class="clear">
+                    <h1 class="ir_su">test</h1>
+                    <p class="left">
+                        <a href="#">COETank</a>
+                    </p>
+                    <ul>
+                     <li><a>회사소개</a></li>
+                     <li>
+                        <a>사업 및 제품소개</a>
+                        <ul class="clearfix">
+                            <li><a>Consulting</a></li>
+                            <li><a>SI</a></li>
+                            <li><a>CIS Camera</a></li>
+                            <li><a>Software/Hardware</a></li>
+                            <li><a>Security</a></li>
+                            <li><a>모터상태예측시스템</a></li>
+                        </ul>
+                    </li>
+                     <li><a>공지사항</a></li>
+                     <li>
+                        <a>Contact</a>
+                        <ul class="clearfix">
+                            <li><a>위치</a></li>
+                            <li><a>연락처</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                    <p class="right"><i class="fa fa-reorder"></i></p>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div id="slider">
+               <div class="slider">
+                <ul>
+                 <li class="clearfix">
+                  <span class="fadeInRight" style="animation-duration:2s;position: static; overflow-wrap: break-word;">Welcome to COETANK</span>
+                  <div class="fadeInLeft" style="animation-duration:2s;">
+                    <span></span>
+                  </div>
+                  <div id="text-slider-caption" class="fadeInDown" style="animation-duration: 2s;">COETANK Business solutions</div>
+                 </li>
+                </ul>  
+               </div> 
+              </div>
+             </div>
+            </div>
+           </div>
+           <a class="scroll-wrap" href="#"><span ><span class="fa fa-angle-down fa-2x"></span></span></a>
+           <a class="sm-up-container"><i class="fa fa-arrow-circle-up sm-up"></i></a>
+          </div>
+          <div class="clearfix"></div>
+          <div id="article">
+           <div class="container">
+            <div class="row">
+             <div class="article">
+              <div class="content">
+               <div class="content-title">
+                <h2><span class="fadeInUp" style="display: block; animation-duration: 2s;">COETANK</span></h2>
+                <div class="line fadeInUp" style="animation-duration: 2s;"><span></span></div>
+               </div>
+               <div class="content-main fadeInLeft"  style="animation-duration: 2s;">         
+                <div class="circle">
+                 <i class="fa fa-university fa-2x"></i>
+                </div>
+                <h3><a title="회사소개" alt="회사소개">회사소개</a></h3>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+               </div>
+              </div>        
+             </div>        
+            </div>
+           </div>
+          </div>
+         </div>
+        <div class="clearfix"></div>
+        <div id="footer">
+            <div class="container">
+                <div class="footer">
+                    <p class="fadeInLeft" style="animation-duration: 2s;">
+                        본사 : 충남 아산시 배방읍 장재로 24번길 3-6 1층 101호, 102호
+                        <br>동탄 사무실 : 경기도 화성시 동탄순환대로 823 에이팩시티 409호
+                        <br>T : 070-4793-2894, F : 041-534-2849
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
